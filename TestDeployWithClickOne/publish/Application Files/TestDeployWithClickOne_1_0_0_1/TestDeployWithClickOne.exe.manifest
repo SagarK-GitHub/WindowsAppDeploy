@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="TestDeployWithClickOne.exe" version="1.0.0.1" publicKeyToken="34e04ac52942a952" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="TestDeployWithClickOne" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="TestDeployWithClickOne.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TestDeployWithClickOne.exe" size="8672">
+      <assemblyIdentity name="TestDeployWithClickOne" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>odS1dwDUr5W9qO5RJvoB9BkLUgXQTj5qh7glSRIwWGM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="TestDeployWithClickOne.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-88F9S7E\sagar" issuerKeyHash="ef9c6cb9cf664550a54ca700d3e1efc3babd1428" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>cScaGvPLQB4lIV0772A/TwGwxakmVqc9mqNCetHTJ7w=</DigestValue></Reference></SignedInfo><SignatureValue>UcNPyxcSiCILL3UEGIRaXLVX84AGqk1Q7i2sLswaLz15r3YtRAkC5N/TMOvj/hLCmbibwzyes93hpf2s093rcMDIgrnriLmXApmbNxjHd7L09alxZClypNwlk2MWlvs5z7vW4iVcA0gHjI2w78A2fFR4A4h0fm1WeXNI+My/vFM=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>pKf2YHMnFGqppfYhSZUT7uSNX7tG/MSH2bzvfAu4Hi3naxXiu0lB3KsDe5puLU9MsloJleneUF2WclcNlJbWbr3k0rwdSLfOUrOxxf6VxeX1KA5EOGptRFE08P2mst/KzxRY4WGCJ/vFySjLX/BoMPS1qzvONf8hDezL7frcxJU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="bc27d3d17a42a39a3da75626a9c5b0014f3f60ef3b5d21251e40cbf31a1a2771" Description="" Url=""><as:assemblyIdentity name="TestDeployWithClickOne.exe" version="1.0.0.1" publicKeyToken="34e04ac52942a952" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-88F9S7E\sagar</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>LKS344ThZnU4lg9H+GrDozDnVBG9mDLKdV/5ZjS47c8=</DigestValue></Reference></SignedInfo><SignatureValue>S2OU90aTYT1GO9t0ti1AplrKXUreytEWDHvEGUWT0Ql0fQMBYB0i9Fzzxj7ghaWgpoeMFBQYIaH9Gn/i3rtNP43HGNn1wv3n+A9/VennRD3mEiju+a1qz6d+TedTp33ONk5aD3WtVOL9Zm0gZtq4esznAmPd2OBSJJ0HByhOMTY=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>pKf2YHMnFGqppfYhSZUT7uSNX7tG/MSH2bzvfAu4Hi3naxXiu0lB3KsDe5puLU9MsloJleneUF2WclcNlJbWbr3k0rwdSLfOUrOxxf6VxeX1KA5EOGptRFE08P2mst/KzxRY4WGCJ/vFySjLX/BoMPS1qzvONf8hDezL7frcxJU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQKq0HbSI5YrdKLQmT9Xo/KjANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtADgAOABGADkAUwA3AEUAXABzAGEAZwBhAHIwHhcNMjQwNjA4MDgwNDIxWhcNMjUwNjA4MTQwNDIxWjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtADgAOABGADkAUwA3AEUAXABzAGEAZwBhAHIwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAKSn9mBzJxRqqaX2IUmVE+7kjV+7RvzEh9m873wLuB4t52sV4rtJQdyrA3uabi1PTLJaCZXp3lBdlnJXDZSW1m695NK8HUi3zlKzscX+lcXl9SgORDhqbURRNPD9prLfys8UWOFhgif7xckoy1/waDD0tas7zjX/IQ3sy+363MSVAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAG5Nt0M2llwqLOoE5VNbnYCBjQDAyrjCD9NrZzS9HQh0hp9XwWNhOAa4qB6l2ZSHry+Wlm98PPKGOzrIwd7iyqN9agI93zYBYnCrxbhNDMSh28ZuXKg1AkoG/Qcex7A/tGil6b/QGvPsg7jP43iQNFVnqLEYghDE/l2glWfxcRaA=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
